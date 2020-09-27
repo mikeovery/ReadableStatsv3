@@ -1,0 +1,81 @@
+<svg>
+  <image id="bgImage" x="0" y="0" width="100%" height="100%" href="bgBlack.jpg" pointer-events="visible" />
+
+  <!-- Battery -->
+  <g id="Batt">
+  <rect id="battBox" x="26" y="130" class="item" fill="grey" width="280" height="10" />
+  <rect id="battProgFill" x="28" y="132" class="item" fill="black" width="276" height="6" />
+  <rect id="batteryLevelRed" x="28" y="132" height="6" />
+  <rect id="batteryLevelAmber" x="56" y="132" height="6" />
+  <rect id="batteryLevelGreen" x="84" y="132" height="6" />
+  </g>
+  <g id="AOD" display="none">
+  <text id="batChrg" class="baseSettings" x="155" y="270"/>
+  </g>
+  
+  <!-- Clock -->
+  <text id="clockTextH" class="clock-displayH" x="67" y="74" pointer-events="visible">10</text>
+  <circle id="dot1" cx="119" cy="34" r="5" fill="white"/>
+  <circle id="dot2" cx="119" cy="54" r="5" fill="white"/>
+  <text id="clockTextM" class="clock-displayM" x="176" y="74" pointer-events="visible">00</text>
+
+  <text id="date" class="baseSettings" x="19" y="115" />
+
+  <!-- Date -->
+  <g id="Data">
+  <circle id="dot3" cx="234" cy="42" r="4" fill="khaki"/>
+  <circle id="dot4" cx="234" cy="62" r="4" fill="khaki"/>
+  <text id="clockTextS" class="clock-displayS" x="241" y="72">00</text>
+  <circle id="ampmCircle" cx="22" cy="67" r="5" fill="yellow"/>
+  
+  <!--Heart Rate Data-->
+  <g id="heartRate">
+    <image id="dataIcon" href="icons/heartIcon.png" width="28" height="28" x="280" y="85" fill="fb-red" />
+    <text id="hrm-data" class="baseSettings" x="240" y="115" />
+  </g>
+  
+  <rect id="stepBox" x="26" y="145" class="item" fill="grey" width="280" height="10" />
+  <rect id="stepProgFill" x="28" y="147" class="item" fill="black" width="276" height="6" />
+  <rect id="stepProg1" x="28" y="147" class="item" fill="lightblue" width="206" height="3" />
+  <rect id="stepProg2" x="28" y="150" class="item" fill="lightblue" width="206" height="3" />
+  
+  <!-- Distance -->
+  <g id="distance" class="deviceData">
+    <arc id="arcBack" x="21" y="190" width="65" height="65" fill="fb-extra-dark-gray" arc-width="3" start-angle="0" sweep-angle="360" />
+    <arc id="arcFront" x="21" y="190" width="65" height="65" arc-width="3" fill="green" start-angle="0" sweep-angle="0" />
+    <image id="dataIcon" href="icons/distOpen.png" width="24" height="24" x="42" y="163" fill="green" />
+    <text id="dataCount" class="smallFont" x="34" y="232" text-length="3" />
+  </g>
+  
+  <!-- Calories -->
+  <g id="calories" class="deviceData">
+    <arc id="arcBack" x="96" y="190" width="65" height="65" fill="fb-extra-dark-gray" arc-width="3" start-angle="0" sweep-angle="360" />
+    <arc id="arcFront" x="96" y="190" width="65" height="65" fill="orange" arc-width="3" start-angle="0" sweep-angle="0" />
+    <image id="dataIcon" href="icons/calsOpen.png" width="24" height="24" x="117" y="163" fill="orange" />
+    <text id="dataCount" class="smallestFont" x="128" y="229"  text-length="4" />
+  </g>
+    
+  <!-- Stairs Climbed -->
+  <g id="elevationGain" class="deviceData">
+    <arc id="arcBack" x="171" y="190" width="65" height="65" fill="fb-extra-dark-gray" arc-width="3" start-angle="0" sweep-angle="360" />
+    <arc id="arcFront" x="171" y="190" width="65" height="65" fill="red" arc-width="3" start-angle="0" sweep-angle="0" />
+    <image id="dataIcon" href="icons/floorsOpen.png" width="24" height="24" x="192" y="163" fill="red" />
+    <text id="dataCount" class="smallFont" x="186" y="232"  text-length="3" />
+  </g>
+  
+  <!-- Active Minutes -->
+  <g id="activeZoneMinutes" class="deviceData">
+    <arc id="arcBack" x="246" y="190" width="65" height="65" fill="fb-extra-dark-gray" arc-width="3" start-angle="0" sweep-angle="360" />
+    <arc id="arcFront" x="246" y="190" width="65" height="65" fill="yellow" arc-width="3" start-angle="0" sweep-angle="0" />
+    <image id="dataIcon" href="icons/amOpen.png" width="24" height="24" x="267" y="163" fill="yellow"/>
+    <text id="dataCount" class="smallFont" x="261" y="232"  text-length="3" />
+  </g>
+
+    <!-- Steps -->
+  <g id="steps">
+    <image id="dataIcon" href="icons/stepsOpen.png" width="40" height="40" x="20" y="266" fill="lightblue"/>
+    <text id="dataCount" class="baseSettings" x="170" y="306" text-length="5" />
+  </g>
+
+  </g>
+</svg>

@@ -1,0 +1,29 @@
+{
+  "devDependencies": {
+    "@fitbit/sdk": "~5.0.0"
+  },
+  "fitbit": {
+    "appUUID": "918eb0e1-18fd-4fb3-8ef0-a26513ca1782",
+    "appType": "clockface",
+    "appDisplayName": "Readable Stats v3",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "",
+    "requestedPermissions": [
+      "access_activity",
+      "access_heart_rate",
+      "access_location",
+      "access_user_profile",
+      "access_aod"
+    ],
+    "buildTargets": [
+      "atlas",
+      "vulcan"
+    ],
+    "i18n": {
+      "en-US": {
+        "name": "Readable Stats v3"
+      }
+    },
+    "defaultLanguage": "en-US"
+  }
+}
