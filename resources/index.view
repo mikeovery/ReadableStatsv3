@@ -40,41 +40,53 @@
   <rect id="stepProg2" x="28" y="150" class="item" fill="lightblue" width="206" height="3" />
   
   <!-- Distance -->
-  <g id="distance" class="deviceData">
-    <arc id="arcBack" x="21" y="190" width="65" height="65" fill="fb-extra-dark-gray" arc-width="3" start-angle="0" sweep-angle="360" />
-    <arc id="arcFront" x="21" y="190" width="65" height="65" arc-width="3" fill="green" start-angle="0" sweep-angle="0" />
-    <image id="dataIcon" href="icons/distOpen.png" width="24" height="24" x="42" y="163" fill="green" />
-    <text id="dataCount" class="smallFont" x="34" y="232" text-length="3" />
+  <g id="distance" class="deviceData" pointer-events="visible">
+    <image id="dataIcon" href="icons/distOpen.png" width="40" height="40" x="32" y="171" fill="green" />
+    <arc id="arcBack" x="21" y="160" width="62" height="62" fill="fb-extra-dark-gray" arc-width="4" start-angle="0" sweep-angle="360" />
+    <arc id="arcFront" x="21" y="160" width="62" height="62" arc-width="4" fill="green" start-angle="0" sweep-angle="0" />
+    <arc id="arcSel" x="26" y="165" width="52" height="52" arc-width="2" fill="white" start-angle="0" sweep-angle="0" />
+    <text id="dataCount" class="baseSettings" x="170" y="306" text-length="11" />
+    <g display="none"><text id="suffix">&nbsp;miles</text></g>
   </g>
   
   <!-- Calories -->
-  <g id="calories" class="deviceData">
-    <arc id="arcBack" x="96" y="190" width="65" height="65" fill="fb-extra-dark-gray" arc-width="3" start-angle="0" sweep-angle="360" />
-    <arc id="arcFront" x="96" y="190" width="65" height="65" fill="orange" arc-width="3" start-angle="0" sweep-angle="0" />
-    <image id="dataIcon" href="icons/calsOpen.png" width="24" height="24" x="117" y="163" fill="orange" />
-    <text id="dataCount" class="smallestFont" x="128" y="229"  text-length="4" />
+  <g id="calories" class="deviceData" pointer-events="visible">
+    <image id="dataIcon" href="icons/calsOpen.png" width="40" height="40" x="148" y="171" fill="orange" />
+    <arc id="arcBack" x="137" y="160" width="62" height="62" fill="fb-extra-dark-gray" arc-width="4" start-angle="0" sweep-angle="360" />
+    <arc id="arcFront" x="137" y="160" width="62" height="62" fill="orange" arc-width="4" start-angle="0" sweep-angle="0" />
+    <arc id="arcSel" x="142" y="165" width="52" height="52" arc-width="2" fill="white" start-angle="0" sweep-angle="0" />
+    <text id="dataCount" class="baseSettings" x="170" y="306" text-length="11" />
+    <g display="none"><text id="suffix">&nbsp;cals</text></g>
   </g>
     
   <!-- Stairs Climbed -->
-  <g id="elevationGain" class="deviceData">
-    <arc id="arcBack" x="171" y="190" width="65" height="65" fill="fb-extra-dark-gray" arc-width="3" start-angle="0" sweep-angle="360" />
-    <arc id="arcFront" x="171" y="190" width="65" height="65" fill="red" arc-width="3" start-angle="0" sweep-angle="0" />
-    <image id="dataIcon" href="icons/floorsOpen.png" width="24" height="24" x="192" y="163" fill="red" />
-    <text id="dataCount" class="smallFont" x="186" y="232"  text-length="3" />
+  <g id="elevationGain" class="deviceData" pointer-events="visible">
+    <image id="dataIcon" href="icons/floorsOpen.png" width="40" height="40" x="206" y="206" fill="red" />
+    <arc id="arcBack" x="195" y="195" width="62" height="62" fill="fb-extra-dark-gray" arc-width="4" start-angle="0" sweep-angle="360" />
+    <arc id="arcFront" x="195" y="195" width="62" height="62" fill="red" arc-width="4" start-angle="0" sweep-angle="0" />
+    <arc id="arcSel" x="200" y="200" width="52" height="52" arc-width="2" fill="white" start-angle="0" sweep-angle="0" />
+    <text id="dataCount" class="baseSettings" x="170" y="306" text-length="11" />
+    <g display="none"><text id="suffix">&nbsp;floors</text></g>
   </g>
   
   <!-- Active Minutes -->
-  <g id="activeZoneMinutes" class="deviceData">
-    <arc id="arcBack" x="246" y="190" width="65" height="65" fill="fb-extra-dark-gray" arc-width="3" start-angle="0" sweep-angle="360" />
-    <arc id="arcFront" x="246" y="190" width="65" height="65" fill="yellow" arc-width="3" start-angle="0" sweep-angle="0" />
-    <image id="dataIcon" href="icons/amOpen.png" width="24" height="24" x="267" y="163" fill="yellow"/>
-    <text id="dataCount" class="smallFont" x="261" y="232"  text-length="3" />
+  <g id="activeZoneMinutes" class="deviceData" pointer-events="visible">
+    <image id="dataIcon" href="icons/azmOpen.png" width="40" height="40" x="264" y="171" fill="yellow"/>
+    <arc id="arcBack" x="253" y="160" width="62" height="62" fill="fb-extra-dark-gray" arc-width="4" start-angle="0" sweep-angle="360" />
+    <arc id="arcFront" x="253" y="160" width="62" height="62" fill="yellow" arc-width="4" start-angle="0" sweep-angle="0" />
+    <arc id="arcSel" x="258" y="165" width="52" height="52" arc-width="2" fill="white" start-angle="0" sweep-angle="0" />
+    <text id="dataCount" class="baseSettings" x="170" y="306" text-length="11" />
+    <g display="none"><text id="suffix">&nbsp;mins</text></g>
   </g>
 
     <!-- Steps -->
-  <g id="steps">
-    <image id="dataIcon" href="icons/stepsOpen.png" width="40" height="40" x="20" y="266" fill="lightblue"/>
-    <text id="dataCount" class="baseSettings" x="170" y="306" text-length="5" />
+  <g id="steps" pointer-events="visible" pointer-events="visible">
+    <image id="dataIcon" href="icons/stepsOpen.png" width="40" height="40" x="90" y="206" fill="lightblue"/>
+    <arc id="arcBack" x="79" y="195" width="62" height="62" fill="fb-extra-dark-gray" arc-width="4" start-angle="0" sweep-angle="360" />
+    <arc id="arcFront" x="79" y="195" width="62" height="62" fill="lightblue" arc-width="4" start-angle="0" sweep-angle="0" />
+    <arc id="arcSel" x="84" y="200" width="52" height="52" arc-width="2" fill="white" start-angle="0" sweep-angle="0" />
+    <text id="dataCount" class="baseSettings" x="170" y="306" text-length="11" />
+    <g display="none"><text id="suffix"></text></g>
   </g>
 
   </g>
