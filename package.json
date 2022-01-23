@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "@fitbit/sdk": "~5.0.0"
+    "@fitbit/sdk": "~6.0.0"
   },
   "fitbit": {
     "appUUID": "918eb0e1-18fd-4fb3-8ef0-a26513ca1782",
@@ -11,9 +11,7 @@
     "requestedPermissions": [
       "access_activity",
       "access_heart_rate",
-      "access_location",
-      "access_user_profile",
-      "access_aod"
+      "access_user_profile"
     ],
     "buildTargets": [
       "atlas",
