@@ -170,6 +170,13 @@ function refreshData(type) {
   */
   
   let currentDataArc = (currentDataProg / currentDataGoal) * 360;
+  let myunit = "";
+  if (currentType==="distance") { myunit = " mi" }
+  if (currentType==="calories") {myunit = " cal" }
+  if (currentType==="elevationGain") {myunit = " flrs" }
+  if (currentType==="activeZoneMinutes") {myunit = " mins" }
+  type.suffix.text = myunit;
+  console.log (currentType + ":" + myunit)
   if (currentDataArc >= 360) {
     currentDataArc = 360;
     type.arcFront.style.fill = "lightgreen";
